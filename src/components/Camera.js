@@ -1,6 +1,8 @@
 import React from "react";
 import Webcam from "react-webcam";
 
+import './Camera.css';
+
 const Camera = () => {
   const webcamRef = React.useRef(null);
 
@@ -10,10 +12,10 @@ const Camera = () => {
   }, [webcamRef]);
 
   return(
-    <>
-        <Webcam audio={false} ref={webcamRef}/>
+    <div className="webcam-div">
+        <Webcam audio={false} ref={webcamRef} className="webcam"/>
         <button onClick={capture}>Capture</button>
-    </>
+    </div>
   );
 };
 

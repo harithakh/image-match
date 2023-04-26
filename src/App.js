@@ -1,13 +1,24 @@
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import React from "react";
 
-import Header from './components/Header';
-import Camera from './components/Camera';
+import "./App.css";
+
+import Header from "./components/Header";
+import Home from "./Home"
+import Capture from "./Capture";
 
 function App() {
-  return (<>
-    <Header />
-    <Camera />
-  </>
+  return (
+    <>
+      <Header />
+      <div>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/capture" element={<Capture />} />
+        </Routes>
+      </div>
+     
+    </>
   );
 }
 

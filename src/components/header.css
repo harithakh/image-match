@@ -1,0 +1,15 @@
+.header-nav{
+    background-color: #2C3333;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-name{
+    color: #ffffff;
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+    padding-left: 10px;
+    text-decoration: none;
+}

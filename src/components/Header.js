@@ -1,6 +1,10 @@
+import './header.css'
+
 function Header() {
     return (<>
-        <p>Hi</p>
+        <nav className="header-nav">
+            <a className='site-name' href="/">Image Match</a>
+        </nav>
     </>
     );
   }

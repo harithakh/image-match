@@ -1,0 +1,23 @@
+.intro{
+    padding: 10px;
+    font-family: 'Baloo Tamma 2', cursive;
+    font-size: 22px;
+    text-align: center;
+}
+
+.try-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    margin: 0 120px;
+    color: #2E4F4F;
+    background-color: #CBE4DE;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* https://colorhunt.co/palette/2c33332e4f4f0e8388cbe4de */
