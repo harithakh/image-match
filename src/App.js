@@ -13,7 +13,7 @@ function App() {
       <Header />
       <div>
         <Routes>
-          <Route path="/image-match" element={<Home/>}/>
+          <Route path="/" element={<Home/>}/>
           <Route path="/capture" element={<Capture />} />
         </Routes>
       </div>
