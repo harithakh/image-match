@@ -1,11 +1,24 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Webcam from "react-webcam";
 
 import './Camera.css';
 
 const Camera = () => {
-  const webcamRef = React.useRef(null);
+  const [mediaStream, setMediaStream] = useState(null);
+  const webcamRef = useRef(null);
 
+  useEffect(() => {
+    async function getMediaStream() {
+      try {
+        const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+        setMediaStream(stream);
+      } catch (error) {
+        console.error(error);
+      }
+    }
+
+    getMediaStream();
+  }, []);
   const capture = React.useCallback(() => {
     const imageSrc = webcamRef.current.getScreenshot();
     // Do something with the image, e.g. save it to a file or upload it to a server
